@@ -156,7 +156,8 @@ int main()//Criando uma função main(essa função sempre será executada primeiro i
 		printf("Escolha a opção de interface :\n\n");
 		printf("\t 1 Registrar Nomes :\n");
 		printf("\t 2 Consultar Nomes :\n");
-		printf("\t 3 Deletar Nomes :\n\n\n");
+		printf("\t 3 Deletar Nomes :\n");
+		printf("\t 4 Sair do sistema :\n");
 		printf("Opção :");
 		
 		scanf("%d", &opcao);//Armazenando oque o usuário digitou na variável opcao
@@ -181,9 +182,14 @@ int main()//Criando uma função main(essa função sempre será executada primeiro i
 			deletar();//Chamando a função 
 			break;
 			
+			case 4:
+			printf("Obrigado por nada vacilão \n\n-");
+			return 0;//Faz o programa fechar -
+			break;
+			
+			
 			default:
-				printf("Essa opção não está disponível \n\n");
-				system("pause");
+			printf("Essa opção não está disponível \n\n");
 			break;
 		}
 		
